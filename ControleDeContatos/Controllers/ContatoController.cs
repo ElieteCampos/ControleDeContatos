@@ -44,10 +44,10 @@ namespace ControleDeContatos.Controllers
                                 
                 if (apagado)
                 {
-                     TempData["MensagemSucesso"] = "Contato apagado com sucesso.";
+                     TempData["MensagemSucesso"] = "Contato apagado com sucesso!";
                 }
                 else {
-                    TempData["MensagemErro"] = "Ops, ocorreu um erro ao apagar seu contato";
+                    TempData["MensagemErro"] = "Ops, ocorreu um erro ao apagar seu contato!";
                 }
                 
                 return RedirectToAction("Index");
