@@ -4,8 +4,14 @@
 // Write your JavaScript code.
 
 //Paginaçao e busca inteligente de contato + tradução
-$(document).ready(function () {
-    let table = new DataTable('#table-contatos', {
+$(document).ready(function () {   
+  
+    getDataTable('#table-contatos');
+    getDataTable('#table-usuarios');
+})
+
+function getDataTable(id){
+    $(id).DataTable({
         "ordering": true,
         "paging": true,
         "searching": true,
@@ -33,8 +39,9 @@ $(document).ready(function () {
             }
         }
     });
-});
-//fim da paginaçao e busca inteligente de contato + traduçao
+    //fim da paginaçao e busca inteligente de contato + traduçao
+
+}
 
 $('.close-alert').click(function () {
     $('.alert').hide('hide');
